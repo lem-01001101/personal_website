@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Magtibay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/caa5fcdc62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>{</span> Leo Magtibay <span>}</span> </h1>
+                    <ul id="sidemenu">
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a href='#portfolio'>My Work</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text header-row">
+                <div class="header-col-1">
+                    <p>Hello World! I'm <span>Leo Magtibay</span>.</p>
+                    <h1>I research, design,<br> and build.</h1>
+                </div>
+                <div class="header-col-2">
+                    <img src="images/heroImage4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutImage.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About
+                    </h1>
+                    <p>Software engineering graduate student with a robust foundation in applied mathematics and a passion for developing cutting-edge software solutions. Currently serving as a Senior Immersive Software Developer, adept at creating iOS applications and web applications. Proven track record in leading projects, optimizing AI models, and enhancing user experiences through meticulous design and development. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                        <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web and Mobile Development</span>
+                                <br>Front-end: SwiftUI, HTML, CSS, JavaScript, ReactJS, React Native, Angular, Expo
+                                <br>Back-end: Swift, Java, C#, .NET, Spring Boot, Node.js
+                                <br>Databases: PostgreSQL, MySQL
+                            </li>
+                            <li><span>UX / UI Design</span>
+                                <br>Figma, UX Research
+                            </li>
+                            <li><span>Machine Learning and Data Analysis</span>
+                                <br>MATLAB, Python, R, NumPy, TensorFlow, Keras
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>M.S., Software Engineering</span><br> California State University, Northridge - Expected May 2025</li>
+                            <li><span>B.S., Mathematics: Applied Mathematical Sciences</span><br> California State University, Northridge - May 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Global HSI Equity Innovation Hub at CSUN</span>
+                                <br>Senior Immersive Software Developer (Current Role)
+                            </li>
+                            <li><span>SpatialEvolution</span>
+                                <br>AI Prompt Engineering Developer
+                            </li>
+                            <li><span>IntersectLA </span>
+                                <br>Web Designer, UX Researcher, and Project Lead
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/laga_img.png" alt="">
+                    <div class="layer">
+                        <h3>LAGA Hotel</h3>
+                        <p>A full-stack application for hotels. Featuring both employee and customer functionality. Utilizes RESTful API's.</p>
+                        <a href="https://leomagtibaydev.tech/fe_employee/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chatbot_img.png" alt="">
+                    <div class="layer">
+                        <h3>Persona Chatbot</h3>
+                        <p>A chatbot where the "persona" can be augmented. Utilizes ChatGPT API.</p>
+                        <a href="https://github.com/lem-01001101/ai_chatbot_toy" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pok_img.png" alt="">
+                    <div class="layer">
+                        <h3>Predicting the height and weight of a Pokemon.</h3>
+                        <p>We use the Pokemon data set to predict height and weight of a pokemon. Utilizes Mutiple Linear Regression and SignifReg Package for model building.</p>
+                        <a href="https://github.com/lem-01001101/pokemon_modbuild" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/lem-01001101?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-regular fa-paper-plane"></i> <a href="mailto: leo.magtibay.dev@gmail.com"><u>leo.magtibay.dev@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/leo-magtibay-dev/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
